@@ -20,26 +20,26 @@ After ingestion, the dataset is profiled before validation.
 
 The pipeline checks:
 
-• Number of rows
-• Number of columns
-• Column names
-• Data types
-• Missing values
-• Duplicate rows
-• Unique values
+                • Number of rows
+                • Number of columns
+                • Column names
+                • Data types
+                • Missing values
+                • Duplicate rows
+                • Unique values
 
 The first records are also displayed to understand the structure of the dataset.
 
 ### 3. Numeruc column Inspection
 The numeric fields are inspected separately because some valuesbare stored as strings in the raw Amazon dataset.
 
-The following fields are examined;
+The following fields are examined:
 
-• discounted_price
-• actual_price
-• discount_percentage
-• rating
-• rating_count
+                                • discounted_price
+                                • actual_price
+                                 discount_percentage
+                                • rating
+                                • rating_count
     This helps identify values that may have formatting or validation problems before they clasasies as invalid.
 
 ### 4. Missing Data Detection
@@ -49,7 +49,8 @@ The pipeline identifies records containing missing values
 for example, the raw dataset contains missing values in the rating_count column.
 
 Missing records are separated from the raw dataset and written to:
-                                                                    Output/missing_data.csv
+
+       Output/missing_data.csv
 
 The missing values are not filled or changed because the objectives of this project is to identify and separate problematic records rather than modify the original data
 
@@ -68,7 +69,8 @@ The pipeline therefore assigns rejection reasons to problematic records.
             invalid_actual_format
             invalid_actual_range
 Theese reasoms are stored with the rejected records in:
-                                                        Output/rejected_rows.csv
+
+     Output/rejected_rows.csv
 
 ### 6. REJECTED DATA SEPARATION
 
@@ -87,7 +89,8 @@ The clean dataset is geerated separately from the raw source file,.
 After identifying the rejected records, the pipeline creates a clean dataet containing records that passed the validation process.
 
 The resulting file is:
-                    Output/clean_amazon.csv
+    
+    Output/clean_amazon.csv
 
 
 The clean dataset is generated separately from the raw source file.
@@ -106,10 +109,12 @@ The report includes information such as:
 • Clean rows
 
 The report is stored in:
-                        Output/data_quality_report.csv
+
+    Output/data_quality_report.csv
 
 A Summary file is also generated:
-                                Output/data_quality_summary.csv
+
+    Output/data_quality_summary.csv
 
 ### 10 Logging
 Logging was added to make the pipeline easier to monitor and troubleshoot.
@@ -122,7 +127,8 @@ The pipeline records events such as:
 • Output files generated
 
 The log file is stored at:
-                        Output/pipeline.log
+                 
+     Output/pipeline.log
 
 ### 11 MODULAR PYTHON FUNTIONS
 The pipeline was designed using reusable python functions instead of putting all processing logic inside one large script.
