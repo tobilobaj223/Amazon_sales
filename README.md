@@ -160,28 +160,28 @@ The purpose of the tests is to confirm that:
 An important desihn decision in this project is that the raw source data is never overwritten
 The pipeline follows this patterns 
 
-Raw Data
-   |
-   v
-Inspection
-   |
-   v
-Validation
-   |
-   +------------------+
-   |                  |
-   v                  v
-Missing Data      Invalid Data
-   |                  |
-   +--------+---------+
-            |
-            v
-      Rejected Rows
-            |
-            v
-      Clean Dataset
-            |
-            v
-   Data Quality Report
+    Raw Data
+       |
+       v
+    Inspection
+       |
+       v
+    Validation
+       |
+     +------------------+
+        |                  |
+       v                  v
+    Missing Data      Invalid Data
+       |                  |
+       +--------+---------+
+                |
+                v
+          Rejected Rows
+                |
+                v
+          Clean Dataset
+                |
+                v
+       Data Quality Report
 
 This allows rejected reocrds to be investigated while keeping the original source data avilable for traceability.
