@@ -1,0 +1,12 @@
+2026-08-13 00:08:14,087 - INFO - Amazon data pipeline started.
+2026-08-13 00:08:14,613 - INFO - Raw dataset loaded: 1465 rows, 16 columns.
+2026-08-13 00:08:15,176 - INFO - Missing data identified: 2 rows.
+2026-08-13 00:08:15,294 - INFO - missing_data.csv generated successfully.
+2026-08-13 00:08:15,363 - INFO - Invalid data identified: 1 rows.
+2026-08-13 00:08:15,431 - INFO - invalid_data.csv generated successfully.
+2026-08-13 00:08:16,425 - INFO - Total rejected rows identified: 3.
+2026-08-13 00:08:16,429 - INFO - rejected_rows.csv generated successfully.
+2026-08-13 00:08:16,726 - INFO - Clean Amazon dataset generated: 1462 rows.
+2026-08-13 00:08:16,726 - INFO - clean_amazon.csv generated successfully.
+2026-08-13 00:08:16,764 - INFO - data_quality_report.csv generated successfully.
+2026-08-13 00:08:16,779 - INFO - Amazon data pipeline completed successfully.

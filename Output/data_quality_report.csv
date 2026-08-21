@@ -1,0 +1,8 @@
+check,result
+raw_rows,1465
+raw_columns,16
+duplicate_rows,0
+missing_data_rows,2
+invalid_data_rows,1
+rejected_rows,3
+clean_rows,1462
